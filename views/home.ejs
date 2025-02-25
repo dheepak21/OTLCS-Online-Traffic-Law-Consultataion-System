@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Colorful Homepage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        /* Title Bar */
+        #title-bar {
+            background-color: #e266d2;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Main Navigation Bar */
+        #navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        #navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        #navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* Logo and Additional Navigation Bar */
+        #logo {
+            float: right;
+            padding: 15px;
+        }
+
+        #logo img {
+            width: 50px; /* Adjust the logo size */
+            height: auto;
+            cursor: pointer;
+        }
+
+        #user-menu {
+            display: none;
+            position: absolute;
+            top: 60px;
+            right: 10px;
+            background-color: #333;
+            padding: 10px;
+            z-index: 1;
+        }
+
+        #user-menu a {
+            color: #f2f2f2;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 600px) {
+            #navbar a {
+                float: none;
+                display: block;
+                text-align: left;
+                width: 100%;
+                box-sizing: border-box;
+            }
+
+            #logo {
+                float: none;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Title Bar -->
+    <div id="title-bar">
+        <h1>Online Traffic Law Consultation System</h1>
+    </div>
+
+    <!-- Main Navigation Bar -->
+    <div id="navbar"method="post">
+        <a href="#">Home</a>
+        <a href="/search">Search</a>
+        <a href="https://eservices.tnpolice.gov.in/CCTNSNICSDC/ComplaintRegistrationPage?0-1.-userForm-link">Register Complaint</a>
+        <a href="https://parivahan.gov.in/parivahan/">Parivahan Seva</a>
+        <a href="/feedback">Feedback</a>
+
+        <!-- Logo and Additional Navigation Bar -->
+        <div id="logo">
+            <img src="your-logo-image.png" alt="Logo" onclick="toggleUserMenu()">
+            <div id="user-menu">
+                <a href="#">Login</a>
+                <a href="#">Logout</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript to toggle the user menu
+        function toggleUserMenu() {
+            var userMenu = document.getElementById("user-menu");
+            userMenu.style.display = (userMenu.style.display === "block") ? "none" : "block";
+        }
+    </script>
+
+</body>
+</html>

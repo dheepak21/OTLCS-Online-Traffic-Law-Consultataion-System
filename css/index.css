@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+   }
+   
+   .navbar {
+    overflow: hidden;
+    background-color: #333;
+   }
+   
+   .navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+   }
+   
+   .navbar a:hover {
+    background: #ddd;
+    color: black;
+   }
+   
+   .navbar a.active {
+    background-color: #40f4dc;
+    color: white;
+   }
+   
+   .search-container {
+    margin: 20px;
+   }
+   
+   input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+   }
+   
+   button[type=submit] {
+    background-color: #0a6a5e;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+   }
+   
+   button[type=submit]:hover {
+    background-color: #03ae97;
+   }
+   .logo img {
+    width: 50px;
+    height: 50px;
+    float: right;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+   }
+   .footer{
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+   }
+
+   .div-container {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+}
+
+.div-container img {
+    width: 300px;
+    height: 200px;
+}
+
+.div-container p {
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+    text-align: right;
+}
+.div-container{
+    border: 3px solid red;
+    border-radius: 3px;
+}
+
+@media screen and (max-width: 768px) {
+    .div-container {
+        width: 100%;
+        padding: 10px;
+    }
+}
